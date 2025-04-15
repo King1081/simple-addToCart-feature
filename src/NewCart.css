@@ -1,0 +1,139 @@
+.App {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    /*max-width: 800px;
+  margin: 0 auto;*/
+    background-color: #f5f7fa;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #34495e;
+    margin: 25px 0 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  li:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .empty-cart {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+  }
+  
+  .total-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #27ae60;
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+  }
+
+  /* Add this to your CSS */
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .item-added {
+    animation: pop 0.3s ease;
+  }
+  
+  .nuke-button {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  .item-quantity {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: rgba(0, 0, 0, 0.473);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 600px) {
+    .App {
+      padding: 15px;
+    }
+    
+    li {
+      flex-wrap: wrap;
+    }
+    
+    button {
+      margin: 8px 0 0 0;
+      width: 100%;
+    }
+    
+    .product-info {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+
+  .total-price {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
