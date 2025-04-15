@@ -84,6 +84,10 @@ This implementation demonstrates:
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
 
+## Preview link
+
+[AddToCart](https://simple-add-to-cart-feature.netlify.app/)
+
 ## 📄 License
 
 UG © [Papah Quansah]
